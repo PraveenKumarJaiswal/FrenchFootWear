@@ -27,9 +27,13 @@ public class Login extends BaseClass {
 	public void login(String userMail, String password) {
 
 		rg.loginEmail.sendKeys(userMail);
+		logger.info("enter username");
 		rg.loginPassword.sendKeys(password);
+		logger.info("Enter password");
 		rg.verifyLogin.click();
+		logger.info("lick login button");
 		menu.Continue.click();
+		logger.info("click continue button");
 
 	}
 	

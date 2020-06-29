@@ -24,7 +24,11 @@ public class Menu extends BaseClass {
 	 * Add To Cart {@link WebElement}
 	 * 
 	 */
-
+	
+	@FindBy(xpath = "//*[@class='modal-close' and @data-label='Close']")
+	public WebElement locationPopUpCloseBtn;
+		
+	
 	@FindBy(xpath = "//div[@id='btn_addtocart']")
 
 	public WebElement addToCart;

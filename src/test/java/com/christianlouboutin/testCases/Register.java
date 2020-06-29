@@ -28,15 +28,25 @@ public class Register extends BaseClass {
 			String phone) {
 
 		rg.firstname.sendKeys(firstName);
+		logger.info("entered FN");
 		rg.lastname.sendKeys(LastName);
+		logger.info("entered LN");
 		rg.email.sendKeys(email);
+		logger.info("entered email");
 		rg.cemail.sendKeys(email);
+		logger.info("entered conf email");
 		rg.address1.sendKeys(addres);
+		logger.info("entered address");
 		rg.city.sendKeys(city);
+		logger.info("entered city");
 		rg.postCode.sendKeys(pin);
+		logger.info("entered pin");
 		select.selectByVisibleText(rg.regionId, "Allier");
+		logger.info("entered region id");
 		rg.telephone.sendKeys(phone);
+		logger.info("entered phone no.");
 		rg.Continue.click();
+		logger.info("user click on register button");
 
 	}
 
