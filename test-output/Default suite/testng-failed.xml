@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]" parallel="none">
   <test verbose="2" name="Default test">
     <classes>
-      <class name="com.christianlouboutin.testCases.Register"/>
+      <class name="com.christianlouboutin.testCases.AddCart"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Default test(failed)">
+  <test name="Default test(failed)" parallel="none">
     <classes>
-      <class name="com.christianlouboutin.testCases.Register">
+      <class name="com.christianlouboutin.testCases.AddCart">
         <methods>
-          <include name="register"/>
+          <include name="addToCart"/>
+          <include name="checkOut"/>
         </methods>
-      </class> <!-- com.christianlouboutin.testCases.Register -->
+      </class> <!-- com.christianlouboutin.testCases.AddCart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

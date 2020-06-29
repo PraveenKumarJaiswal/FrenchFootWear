@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="browser" value="chrome"/>
+  <listeners>
+    <listener class-name="com.christianlouboutin.utilities.Reporting"/>
+  </listeners>
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.christianlouboutin.testCases.AddCart"/>

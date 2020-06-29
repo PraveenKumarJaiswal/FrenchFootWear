@@ -54,7 +54,7 @@ public class BaseClass {
 	 */
 	@Parameters("browser")
 	@BeforeSuite
-	public void setup(String br) {
+	public void setup(String br, ITestContext context) {
 		System.out.println("In @BeforeSuite");
 		logger = Logger.getLogger("messageStudio");
 		PropertyConfigurator.configure("Log4j.properties");
@@ -79,10 +79,10 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(baseURL);
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
-
+		context.setAttribute("WebDriver", driver);
 		js = new JavaScriptExecute(driver);
 		action = new ActionHelper(driver);
 		select = new SelectHelper();
