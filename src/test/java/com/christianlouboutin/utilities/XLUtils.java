@@ -9,16 +9,12 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-
-import com.christianlouboutin.pageObjects.BaseClass;
-import com.christianlouboutin.pageObjects.Menu;
 /**
  * 
  *Excel Utillty Class.
  *
  */
-public class XLUtils extends BaseClass{
-	Menu menu = new Menu();
+public class XLUtils {
 	
 	public static FileInputStream fi;
 	public static FileOutputStream fo;
@@ -123,24 +119,6 @@ public class XLUtils extends BaseClass{
 		wb.close();
 		fi.close();
 		fo.close();
-	}
-	
-	public void closeLocationPopUp()
-	{
-		if(menu.locationPopUpCloseBtn.isDisplayed())
-		{
-			logger.info("*************************");
-			logger.info("Location popup appears now");
-			menu.locationPopUpCloseBtn.click();
-			logger.info("closed the location popup");
-			logger.info("*************************");
-		}
-		else 
-		{
-			logger.info("No location found");
-			
-		}
-			
 	}
 	
 	

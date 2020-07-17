@@ -8,18 +8,17 @@ import org.testng.annotations.Test;
 
 import com.christianlouboutin.pageObjects.BaseClass;
 import com.christianlouboutin.pageObjects.Registration;
+import com.christianlouboutin.utilities.XLUtils;
 
 public class Register extends BaseClass {
 
 	Registration rg;
 
 	@BeforeClass
-	@DataProvider(name = "RegistrationData")
-	public String[][] init() throws IOException {
+
+	public void init() throws IOException {
 
 		rg = new Registration();
-
-		return dataSource.getRegistrationData();
 
 	}
 
@@ -28,26 +27,36 @@ public class Register extends BaseClass {
 			String phone) {
 
 		rg.firstname.sendKeys(firstName);
-		logger.info("entered FN");
 		rg.lastname.sendKeys(LastName);
-		logger.info("entered LN");
 		rg.email.sendKeys(email);
-		logger.info("entered email");
 		rg.cemail.sendKeys(email);
-		logger.info("entered conf email");
 		rg.address1.sendKeys(addres);
-		logger.info("entered address");
 		rg.city.sendKeys(city);
-		logger.info("entered city");
 		rg.postCode.sendKeys(pin);
-		logger.info("entered pin");
 		select.selectByVisibleText(rg.regionId, "Allier");
-		logger.info("entered region id");
 		rg.telephone.sendKeys(phone);
-		logger.info("entered phone no.");
 		rg.Continue.click();
-		logger.info("user click on register button");
 
 	}
 
+	@DataProvider(name = "RegistrationData")
+	public String[][] getRegistrationData() throws IOException {
+
+		String path = System.getProperty("user.dir")
+				+ "/src/test/java/com/christianlouboutin/testData/christianlouboutin.xlsx";
+		int rowcount = XLUtils.getRowCount(path, "Registration");
+		int colcount = XLUtils.getCellCount(path, "Registration", 1);
+
+		System.out.println("rowcount: " + rowcount + " colcount: " + colcount);
+		String registrationData[][] = new String[rowcount][colcount];
+
+		for (int i = 1; i <= rowcount; i++) {
+			for (int j = 0; j < colcount; j++) {
+				registrationData[i - 1][j] = XLUtils.getCellData(path, "Registration", i, j);
+
+			}
+		}
+
+		return registrationData;
+	}
 }

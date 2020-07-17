@@ -21,13 +21,13 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.christianlouboutin.helper.*;
+import com.christianlouboutin.helper.DynamicName;
 
-public class Reporting  extends TestListenerAdapter {
+public class Reporting extends TestListenerAdapter {
 	public ExtentHtmlReporter htmlReporter;
 	public ExtentReports extent;
 	public ExtentTest logger;
-    DynamicName name;
+	DynamicName name;
 	WebDriver driver;
 
 	public void onStart(ITestContext testContext) {
@@ -56,23 +56,25 @@ public class Reporting  extends TestListenerAdapter {
 		File des = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
 
-			FileUtils.copyFile(des,
-					new File(System.getProperty("user.dir") + "/Screenshots/" + tr.getName() + name.getName() +".png"));
+			FileUtils.copyFile(des, new File(
+					System.getProperty("user.dir")+"/test-output/Screenshots/" + tr.getName() + name.getName() + ".png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		logger = extent.createTest(tr.getName()); // create new entry in th report
 		logger.log(Status.PASS, MarkupHelper.createLabel(tr.getName(), ExtentColor.GREEN)); // send the passed
-																							// information to the report with GREEN color
+																							// information to the report
+																							// // with GREEN color
 																							// highlight
-		String screenshotPath = System.getProperty("user.dir") + "/Screenshots/" + tr.getName() + name.getName()+ ".png";
+		String screenshotPath = System.getProperty("user.dir")+"/test-output/Screenshots/" + tr.getName() + name.getName() + ".png";
+		
 
 		File f = new File(screenshotPath);
-
+	
 		if (f.exists()) {
 			try {
-				logger.pass("Screenshot is below:" + logger.addScreenCaptureFromPath(screenshotPath));
+				logger.pass("Screenshot is below:" + logger.addScreenCaptureFromPath("./Screenshots/" + tr.getName() + name.getName() + ".png"));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -85,26 +87,25 @@ public class Reporting  extends TestListenerAdapter {
 		File des = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try {
 
-			FileUtils.copyFile(des,
-					new File(System.getProperty("user.dir") + "/Screenshots/" + tr.getName() + name.getName()+".png"));
+			FileUtils.copyFile(des, new File(
+					System.getProperty("user.dir")+ "/test-output/Screenshots/" + tr.getName() + name.getName() + ".png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		logger = extent.createTest(tr.getName()); // create new entry in th report
 		logger.log(Status.FAIL, MarkupHelper.createLabel(tr.getName(), ExtentColor.RED)); // send the passed information
-																							// to the report with GREEN
-																							// color highlighted
+		logger.log(Status.FAIL, "Error Details :- \n" + tr.getThrowable().getMessage()); // to the report with GREEN
+		// color highlighted
 
-		logger.log(Status.FAIL, "Error Details :- \n" + tr.getThrowable().getMessage());
-			
-		String screenshotPath = System.getProperty("user.dir") + "/Screenshots/" + tr.getName() +name.getName()+ ".png";
+		String screenshotPath = "/test-output/Screenshots/" + tr.getName() + name.getName()
+				+ ".png";
 
 		File f = new File(screenshotPath);
 
 		if (f.exists()) {
 			try {
-				logger.info("Screenshot is below:" + logger.addScreenCaptureFromPath(screenshotPath));
+				logger.fail("Screenshot is below:" + logger.addScreenCaptureFromPath("./Screenshots/" + tr.getName() + name.getName() + ".png"));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

@@ -2,6 +2,7 @@ package com.christianlouboutin.testCases;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -9,49 +10,44 @@ import org.testng.annotations.Test;
 import com.christianlouboutin.pageObjects.BaseClass;
 import com.christianlouboutin.pageObjects.Menu;
 import com.christianlouboutin.utilities.XLUtils;
-import com.mongodb.diagnostics.logging.Logger;
 
 public class AddCart extends BaseClass {
 
 	Menu menu;
 	Login lg;
-	XLUtils util = new XLUtils();
-	
-	
+
 	@BeforeClass
-	@DataProvider(name = "ProductDataDetails")
-	public String[][] init() throws IOException {
+
+	public void init() throws IOException {
 		menu = new Menu();
-		return dataSource.getshoppingData();
 
 	}
 
 	@Test(dataProvider = "ProductDataDetails", priority = 0)
-	public void addToCart(String mainmenu, String subMenu, String pid, String description, String size)
-			throws InterruptedException {
+	public void addToCart(String mainmenu, String subMenu, String pid, String description, String size) {
 
 		menu.selectMenu(mainmenu);
-		logger.info("menu selected: "+menu);
-		//util.closeLocationPopUp();
-		//Thread.sleep(3000);
+		logger.info("Clicked Main menu " + mainmenu);
 		menu.selectSubMenu(subMenu);
-		logger.info("sub menu selected: "+subMenu);
-		menu.selectProduct(pid, description);
-		logger.info("producted selected: "+pid+ "and "+description);
+		logger.info("Clicked sub menu " + subMenu);
+		menu.selectProduct(pid,description);
+		logger.info("Selected product with ID " + pid +" And "+description);
+	
 		
-		logger.info("Lets wait for location popup");
-		//util.closeLocationPopUp();
-			
-		System.out.println(menu.addToCart.isDisplayed());
+		
 		js.scrollTilElement(menu.retour);
-		
-		System.out.println(menu.addToCart.isDisplayed());
-		//Thread.sleep(2000);
 		menu.selectSize(size);
-		logger.info("Selecting size:"+size);
-		//Thread.sleep(2000);
 		js.click(menu.addToCart);
-		logger.info("clicking on add to cart button");
+		try {
+			menu.acceptCookies.click();
+			menu.closeAsk.click();
+
+		} catch (Exception e) {
+			
+		}
+		
+		
+		
 		// menu.home.click();
 
 	}
@@ -61,24 +57,34 @@ public class AddCart extends BaseClass {
 	public void checkOut() throws InterruptedException {
 
 		// menu.cart.click();
-		
-		try {
-			menu.acceptCookies.click();
-			js.click(menu.closeAsk);
-
-		} catch (Exception e) {
-			
-		}
-		
-		
 		// menu.closeAsk.click();
-		// //Thread.sleep(2000);
+		// Thread.sleep(2000);
 		// menu.checkout.click();
 		js.click(menu.checkout);
-		//menu.acceptCookies.click();
+		// menu.acceptCookies.click();
 		// js.scrollTilElement(menu.payment);
 		js.click(menu.payment);
 		// menu.Continue.click();
 
 	}
+
+	@DataProvider(name = "ProductDataDetails")
+	public String[][] getshoppingData() throws IOException {
+		String path = System.getProperty("user.dir")
+				+ "/src/test/java/com/christianlouboutin/testData/christianlouboutin.xlsx";
+
+		int rowcount = XLUtils.getRowCount(path, "Product details");
+		int colcount = XLUtils.getCellCount(path, "Product details", 1);
+		String shoppingData[][] = new String[rowcount][colcount];
+
+		for (int i = 1; i <= rowcount; i++) {
+			for (int j = 0; j < colcount; j++) {
+				shoppingData[i - 1][j] = XLUtils.getCellData(path, "Product details", i, j);
+
+			}
+		}
+
+		return shoppingData;
+	}
+
 }

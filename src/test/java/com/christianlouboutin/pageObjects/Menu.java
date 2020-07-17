@@ -19,17 +19,12 @@ public class Menu extends BaseClass {
 
 	public WebElement home;
 
-
 	/**
 	 * Add To Cart {@link WebElement}
 	 * 
 	 */
-	
-	@FindBy(xpath = "//*[@class='modal-close' and @data-label='Close']")
-	public WebElement locationPopUpCloseBtn;
-		
-	
-	@FindBy(xpath = "//div[@id='btn_addtocart']")
+
+	@FindBy(xpath = "//button[@id='product-addtocart-button']")
 
 	public WebElement addToCart;
 
@@ -47,7 +42,7 @@ public class Menu extends BaseClass {
 	 * 
 	 */
 
-	@FindBy(xpath = "//htag3[contains(text(),'Retour')]")
+	@FindBy(xpath = "//a[@href=\"#product.info.returns\" and contains(text(),'Retour')]")
 
 	public WebElement retour;
 
@@ -92,21 +87,22 @@ public class Menu extends BaseClass {
 	 * 
 	 */
 
-	@FindBy(xpath = "//div[text()='Pas maintenant']")
+	@FindBy(xpath = "//aside[@class='modal-popup popup-newsletter                modal-slide                _inner-scroll _show']//button[@data-role='closeBtn']")
 
 	public WebElement closeAsk;
-	
-	//div[text()='Pas maintenant']
-	
+
+	// div[text()='Pas maintenant']
+
 	/**
 	 * Select Product.
 	 * 
 	 * @param pid
 	 * @throws InterruptedException
 	 */
-	public void selectProduct(String pid, String description) throws InterruptedException {
+	public void selectProduct(String pid, String description) {
 
-		js.click(driver.findElement(By.xpath("//a[@data-sku='" + pid + "' and text()='" + description + "']")));
+		js.click(driver.findElement(
+				By.xpath("//li[@data-product-id='" + pid + "']//a[contains(text(),'" + description + "')]")));
 
 	}
 
@@ -118,8 +114,9 @@ public class Menu extends BaseClass {
 	 */
 	public void selectMenu(String mainMenu) {
 
-		action.moveToElement(driver
-				.findElement(By.xpath("//div[@class='mitem drop-down']//a[contains(text(),'" + mainMenu + "')]")));
+		action.moveToElement(driver.findElement(By.xpath(
+				"//span[@class='ui-menu-icon ui-icon ui-icon-carat-1-e']//following-sibling::span[contains(text(),'"
+						+ mainMenu + "')]")));
 
 	}
 
@@ -132,7 +129,7 @@ public class Menu extends BaseClass {
 
 	public void selectSubMenu(String SubMenu) {
 
-		driver.findElement(By.xpath("//a[text()='" + SubMenu + "']")).click();
+		driver.findElement(By.xpath("//span[text()='" + SubMenu + "']")).click();
 
 	}
 
@@ -144,7 +141,7 @@ public class Menu extends BaseClass {
 	 */
 	public void selectSize(String size) {
 
-		js.click(driver.findElement(By.xpath("//li[@class='attribute-option']//a[contains(text(),'" + size + "')]")));
+		js.click(driver.findElement(By.xpath("//li[@class='in-stock' and contains(text(),'" + size + "')]")));
 		// driver.findElement(By.xpath("//li[@class='attribute-option']//a[contains(text(),'"
 		// + size + "')]")).click();;
 

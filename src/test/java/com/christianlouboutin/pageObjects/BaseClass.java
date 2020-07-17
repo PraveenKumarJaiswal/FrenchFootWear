@@ -1,10 +1,17 @@
 package com.christianlouboutin.pageObjects;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.PageLoadStrategy;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -14,15 +21,21 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestContext;
-
+import org.testng.ITestResult;
+import org.testng.TestListenerAdapter;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
-
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
-import com.christianlouboutin.helper.*;
 import com.christianlouboutin.utilities.*;
+import com.christianlouboutin.helper.ActionHelper;
+import com.christianlouboutin.helper.DataSource;
+import com.christianlouboutin.helper.DynamicName;
+import com.christianlouboutin.helper.JavaScriptExecute;
+import com.christianlouboutin.helper.SelectHelper;
 
 /**
  * Base Class for Initial setup Before starting Test.
@@ -55,8 +68,7 @@ public class BaseClass {
 	@Parameters("browser")
 	@BeforeSuite
 	public void setup(String br, ITestContext context) {
-		System.out.println("In @BeforeSuite");
-		logger = Logger.getLogger("messageStudio");
+		logger = Logger.getLogger("christianlouboutin");
 		PropertyConfigurator.configure("Log4j.properties");
 
 		if (br.equals("chrome")) {
@@ -64,7 +76,7 @@ public class BaseClass {
 			capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 			capabilities.acceptInsecureCerts();
 			ChromeOptions co = new ChromeOptions();
-			co.setPageLoadStrategy(PageLoadStrategy.EAGER);
+			// co.setAcceptInsecureCerts(true);
 			co.merge(capabilities);
 			System.setProperty("webdriver.chrome.driver", readconfig.getChromePath());
 			driver = new ChromeDriver();
@@ -75,20 +87,16 @@ public class BaseClass {
 			System.setProperty("webdriver.ie.driver", readconfig.getIEPath());
 			driver = new InternetExplorerDriver();
 		}
-
+		context.setAttribute("WebDriver", driver);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get(baseURL);
-		driver.manage().timeouts().implicitlyWait(90, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver.manage().deleteAllCookies();
-		context.setAttribute("WebDriver", driver);
+		
 		js = new JavaScriptExecute(driver);
 		action = new ActionHelper(driver);
 		select = new SelectHelper();
-		wait = new WebDriverWait(driver, 30);
-		dataSource = new DataSource();
-
 	}
 
 	/**

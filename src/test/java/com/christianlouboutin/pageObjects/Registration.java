@@ -23,11 +23,19 @@ public class Registration extends BaseClass {
 	public WebElement loginPassword;
 
 	/**
-	 * verifyLogin {@link WebElement}
+	 * Open Login {@link WebElement}
 	 */
-	@FindBy(xpath = "//span[text()='Identifiez-vous']")
-	public WebElement verifyLogin;
+	@FindBy(xpath = "//button[@data-trigger='authentication']")
+	public WebElement openLogin;
 
+	/**
+	 * Verify Login {@link WebElement}
+	 */
+	@FindBy(xpath = "//button[@class='action action-login secondary']")
+	public WebElement verifyLogin;
+	
+	
+	
 	/**
 	 * Select Prefix {@link WebElement}
 	 */

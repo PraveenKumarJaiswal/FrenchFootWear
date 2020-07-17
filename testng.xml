@@ -4,14 +4,13 @@
 	<parameter name="browser" value="chrome"></parameter>
 	<listeners>
 		<listener class-name="com.christianlouboutin.utilities.Reporting"></listener>
-
-	</listeners>
+	</listeners> 
 	<test thread-count="5" name="Test">
 		<classes>
+	
 			<class name="com.christianlouboutin.testCases.AddCart" />
-			<class name="com.christianlouboutin.testCases.Login" />
-			<class name="com.christianlouboutin.testCases.Register" />
-		
+		 	 <class name="com.christianlouboutin.testCases.Login" />
+ 	<class name="com.christianlouboutin.testCases.DeliveryAndPayment" /> 
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
