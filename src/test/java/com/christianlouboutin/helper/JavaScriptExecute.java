@@ -29,7 +29,7 @@ public class JavaScriptExecute {
 	 */
 	public void click(WebElement ele) {
 
-		js.executeScript("arguments[0].click()", ele);
+		js.executeScript("arguments[0].click();", ele);
 
 	}
 
@@ -47,5 +47,11 @@ public class JavaScriptExecute {
 
 	public void scrollTilElement(WebElement target) {
 		js.executeScript("arguments[0].scrollIntoView();", target);
+	}
+
+	public void clickByXLocation(WebElement element) {
+		js.executeScript("window.scrollTo(0,"+element.getLocation().x+")");
+        element.click();
+		
 	}
 }

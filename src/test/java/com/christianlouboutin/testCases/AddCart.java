@@ -61,10 +61,13 @@ public class AddCart extends BaseClass {
 		// Thread.sleep(2000);
 		// menu.checkout.click();
 		js.click(menu.checkout);
+		logger.info("Clicked on Checkout");
 		// menu.acceptCookies.click();
 		// js.scrollTilElement(menu.payment);
-		js.click(menu.payment);
-		// menu.Continue.click();
+		//js.click(menu.payment);
+		menu.payment.click();
+		logger.info("Clicked on Continue To Payment");
+		
 
 	}
 

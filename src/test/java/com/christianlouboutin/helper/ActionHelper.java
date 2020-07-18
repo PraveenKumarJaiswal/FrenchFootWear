@@ -1,5 +1,6 @@
 package com.christianlouboutin.helper;
 
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -42,6 +43,13 @@ public class ActionHelper {
 	}
 	
 	public void clickOn(WebElement target) {
-		action.moveToElement(target).click().build().perform();
+		action.moveToElement(target).click().perform();
+	}
+	
+	
+	public void clickOnByOffSet(WebElement Element) {
+		Point p= Element.getLocation();
+
+		action.moveToElement(Element).moveByOffset(p.x,p.y).click().perform();
 	}
 }

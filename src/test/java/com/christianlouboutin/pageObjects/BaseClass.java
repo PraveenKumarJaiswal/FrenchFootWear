@@ -58,6 +58,7 @@ public class BaseClass {
 	public static DataSource dataSource;
 	public static Logger logger;
 
+
 	/**
 	 * 
 	 * Setup method for initialize driver and common utilities.
@@ -90,10 +91,11 @@ public class BaseClass {
 		context.setAttribute("WebDriver", driver);
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
+		
 		driver.get(baseURL);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		
+		wait = new WebDriverWait(driver, 30);
 		js = new JavaScriptExecute(driver);
 		action = new ActionHelper(driver);
 		select = new SelectHelper();

@@ -99,7 +99,7 @@ public class DeliveryAddressAndPayment extends BaseClass {
 	 * input Radio Delivery methods UPS Express before 10:30 am: Next day delivery
 	 * before 10:30 am (Mon-Fri).{@link WebElement}
 	 */
-	@FindBy(xpath = "//input[@name='ko_unique_2']")
+	@FindBy(xpath = "//td//input[@name='ko_unique_2']")
 
 	public WebElement UPS_Express;
 

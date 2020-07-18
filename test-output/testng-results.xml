@@ -1,73 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="4" total="9" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="69084" started-at="2020-06-29T10:11:23Z" finished-at="2020-06-29T10:12:32Z">
+  <suite name="Suite" duration-ms="118300" started-at="2020-07-18T14:58:11 IST" finished-at="2020-07-18T15:00:10 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="69084" started-at="2020-06-29T10:11:23Z" finished-at="2020-06-29T10:12:32Z">
-      <class name="com.christianlouboutin.testCases.Register">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.christianlouboutin.testCases.Register@7d9d1a19]" name="init" is-config="true" duration-ms="284" started-at="2020-06-29T15:42:27Z" finished-at="2020-06-29T15:42:27Z">
+    <test name="Test" duration-ms="118300" started-at="2020-07-18T14:58:11 IST" finished-at="2020-07-18T15:00:10 IST">
+      <class name="com.christianlouboutin.testCases.DeliveryAndPayment">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.christianlouboutin.testCases.DeliveryAndPayment@704a52ec]" name="init" is-config="true" duration-ms="141" started-at="2020-07-18T15:00:00 IST" finished-at="2020-07-18T15:00:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="register(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.Register@7d9d1a19]" name="register" duration-ms="3709" started-at="2020-06-29T15:42:28Z" data-provider="RegistrationData" finished-at="2020-06-29T15:42:31Z">
+        <test-method status="PASS" signature="payment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.DeliveryAndPayment@704a52ec]" name="payment" duration-ms="9127" started-at="2020-07-18T15:00:00 IST" data-provider="CardDetails" finished-at="2020-07-18T15:00:09 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[FirstName]]>
+                <![CDATA[5136 3333 3333 3335]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[LatsName]]>
+                <![CDATA[03]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[mail@gmail.com]]>
+                <![CDATA[30]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Paris, Xyz]]>
+                <![CDATA[737]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[paris]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[6000789]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[290009938]]>
+                <![CDATA[Jerry]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- register -->
-      </class> <!-- com.christianlouboutin.testCases.Register -->
+        </test-method> <!-- payment -->
+      </class> <!-- com.christianlouboutin.testCases.DeliveryAndPayment -->
       <class name="com.christianlouboutin.testCases.Login">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.christianlouboutin.testCases.Login@4883b407]" name="init" is-config="true" duration-ms="3529" started-at="2020-06-29T15:42:19Z" finished-at="2020-06-29T15:42:23Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.christianlouboutin.testCases.Login@76f2b07d]" name="init" is-config="true" duration-ms="18" started-at="2020-07-18T14:59:42 IST" finished-at="2020-07-18T14:59:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.Login@4883b407]" name="login" duration-ms="3353" started-at="2020-06-29T15:42:23Z" data-provider="LoginData" finished-at="2020-06-29T15:42:26Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.Login@76f2b07d]" name="login" duration-ms="15945" started-at="2020-07-18T14:59:43 IST" data-provider="LoginData" finished-at="2020-07-18T14:59:59 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[user2344]]>
+                <![CDATA[djegkos@gmail.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Pass233]]>
+                <![CDATA[Djeg1010!]]>
               </value>
             </param>
           </params>
@@ -76,7 +66,7 @@
         </test-method> <!-- login -->
       </class> <!-- com.christianlouboutin.testCases.Login -->
       <class name="com.christianlouboutin.testCases.AddCart">
-        <test-method status="PASS" signature="setup(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.christianlouboutin.testCases.AddCart@5622fdf]" name="setup" is-config="true" duration-ms="25817" started-at="2020-06-29T15:40:57Z" finished-at="2020-06-29T15:41:23Z">
+        <test-method status="PASS" signature="setup(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.christianlouboutin.testCases.AddCart@1f57539]" name="setup" is-config="true" duration-ms="18449" started-at="2020-07-18T14:57:53 IST" finished-at="2020-07-18T14:58:11 IST">
           <params>
             <param index="0">
               <value>
@@ -85,18 +75,18 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@5fd9b663]]>
+                <![CDATA[org.testng.TestRunner@31198ceb]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.christianlouboutin.testCases.AddCart@5622fdf]" name="init" is-config="true" duration-ms="5706" started-at="2020-06-29T15:41:26Z" finished-at="2020-06-29T15:41:32Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.christianlouboutin.testCases.AddCart@1f57539]" name="init" is-config="true" duration-ms="111" started-at="2020-07-18T14:58:12 IST" finished-at="2020-07-18T14:58:12 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="addToCart(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.AddCart@5622fdf]" name="addToCart" duration-ms="9291" started-at="2020-06-29T15:41:33Z" data-provider="ProductDataDetails" finished-at="2020-06-29T15:41:42Z">
+        <test-method status="PASS" signature="addToCart(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.AddCart@1f57539]" name="addToCart" duration-ms="8358" started-at="2020-07-18T14:58:15 IST" data-provider="ProductDataDetails" finished-at="2020-07-18T14:58:23 IST">
           <params>
             <param index="0">
               <value>
@@ -105,17 +95,48 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[Kate]]>
+                <![CDATA[So Kate]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[3191530P466]]>
+                <![CDATA[34061]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[Kate]]>
+                <![CDATA[So Kate 120]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[37]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method status="PASS" signature="addToCart(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.AddCart@1f57539]" name="addToCart" duration-ms="68042" started-at="2020-07-18T14:58:24 IST" data-provider="ProductDataDetails" finished-at="2020-07-18T14:59:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Femme]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[So Kate]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[26422]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[So Kate 120]]>
               </value>
             </param>
             <param index="4">
@@ -127,42 +148,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method status="PASS" signature="addToCart(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.AddCart@5622fdf]" name="addToCart" duration-ms="8818" started-at="2020-06-29T15:41:43Z" data-provider="ProductDataDetails" finished-at="2020-06-29T15:41:52Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Homme]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Louis]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[1201008CM47]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Navy Louis Strass]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[39]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addToCart -->
-        <test-method status="PASS" signature="checkOut()[pri:0, instance:com.christianlouboutin.testCases.AddCart@5622fdf]" name="checkOut" duration-ms="21163" started-at="2020-06-29T15:41:53Z" finished-at="2020-06-29T15:42:15Z">
+        <test-method status="PASS" signature="checkOut()[pri:0, instance:com.christianlouboutin.testCases.AddCart@1f57539]" name="checkOut" duration-ms="9112" started-at="2020-07-18T14:59:32 IST" finished-at="2020-07-18T14:59:42 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOut -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.christianlouboutin.testCases.AddCart@5622fdf]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-06-29T15:42:34Z" finished-at="2020-06-29T15:42:34Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.christianlouboutin.testCases.AddCart@1f57539]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-07-18T15:00:10 IST" finished-at="2020-07-18T15:00:10 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

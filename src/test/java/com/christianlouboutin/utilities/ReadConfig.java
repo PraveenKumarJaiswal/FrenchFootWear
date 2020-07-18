@@ -13,7 +13,6 @@ public class ReadConfig {
 	Properties pro;
 
 	public ReadConfig() {
-		System.out.println(System.getProperty("user.dir"));
 		File src = new File("./Configuration/config.properties");
 
 		try {
