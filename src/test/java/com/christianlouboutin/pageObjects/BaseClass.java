@@ -59,13 +59,6 @@ public class BaseClass {
 	public static Logger logger;
 
 
-	/**
-	 * 
-	 * Setup method for initialize driver and common utilities.
-	 * 
-	 * @param br      {@link String} browser name.
-	 * @param context {@link ITestContext}
-	 */
 	@Parameters("browser")
 	@BeforeSuite
 	public void setup(String br, ITestContext context) {
@@ -73,12 +66,7 @@ public class BaseClass {
 		PropertyConfigurator.configure("Log4j.properties");
 
 		if (br.equals("chrome")) {
-			DesiredCapabilities capabilities = new DesiredCapabilities();
-			capabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-			capabilities.acceptInsecureCerts();
-			ChromeOptions co = new ChromeOptions();
-			// co.setAcceptInsecureCerts(true);
-			co.merge(capabilities);
+			
 			System.setProperty("webdriver.chrome.driver", readconfig.getChromePath());
 			driver = new ChromeDriver();
 		} else if (br.equals("firefox")) {
@@ -93,17 +81,15 @@ public class BaseClass {
 		driver.manage().deleteAllCookies();
 		
 		driver.get(baseURL);
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		wait = new WebDriverWait(driver, 30);
 		js = new JavaScriptExecute(driver);
 		action = new ActionHelper(driver);
 		select = new SelectHelper();
 	}
 
-	/**
-	 * Close Browser After Completing the test.
-	 */
+	
 	@AfterSuite
 	public void tearDown() {
 		// driver.quit();

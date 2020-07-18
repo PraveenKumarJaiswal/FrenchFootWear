@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="4" total="9" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="118300" started-at="2020-07-18T14:58:11 IST" finished-at="2020-07-18T15:00:10 IST">
+  <suite name="Suite" duration-ms="123269" started-at="2020-07-18T18:41:53 IST" finished-at="2020-07-18T18:43:56 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="118300" started-at="2020-07-18T14:58:11 IST" finished-at="2020-07-18T15:00:10 IST">
+    <test name="Test" duration-ms="123269" started-at="2020-07-18T18:41:53 IST" finished-at="2020-07-18T18:43:56 IST">
       <class name="com.christianlouboutin.testCases.DeliveryAndPayment">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.christianlouboutin.testCases.DeliveryAndPayment@704a52ec]" name="init" is-config="true" duration-ms="141" started-at="2020-07-18T15:00:00 IST" finished-at="2020-07-18T15:00:00 IST">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.christianlouboutin.testCases.DeliveryAndPayment@1f57539]" name="init" is-config="true" duration-ms="124" started-at="2020-07-18T18:43:35 IST" finished-at="2020-07-18T18:43:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="payment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.DeliveryAndPayment@704a52ec]" name="payment" duration-ms="9127" started-at="2020-07-18T15:00:00 IST" data-provider="CardDetails" finished-at="2020-07-18T15:00:09 IST">
+        <test-method status="PASS" signature="payment(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.DeliveryAndPayment@1f57539]" name="payment" duration-ms="19571" started-at="2020-07-18T18:43:36 IST" data-provider="CardDetails" finished-at="2020-07-18T18:43:55 IST">
           <params>
             <param index="0">
               <value>
@@ -44,11 +44,11 @@
         </test-method> <!-- payment -->
       </class> <!-- com.christianlouboutin.testCases.DeliveryAndPayment -->
       <class name="com.christianlouboutin.testCases.Login">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.christianlouboutin.testCases.Login@76f2b07d]" name="init" is-config="true" duration-ms="18" started-at="2020-07-18T14:59:42 IST" finished-at="2020-07-18T14:59:42 IST">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.christianlouboutin.testCases.Login@e320068]" name="init" is-config="true" duration-ms="22" started-at="2020-07-18T18:43:20 IST" finished-at="2020-07-18T18:43:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.Login@76f2b07d]" name="login" duration-ms="15945" started-at="2020-07-18T14:59:43 IST" data-provider="LoginData" finished-at="2020-07-18T14:59:59 IST">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.Login@e320068]" name="login" duration-ms="13305" started-at="2020-07-18T18:43:21 IST" data-provider="LoginData" finished-at="2020-07-18T18:43:34 IST">
           <params>
             <param index="0">
               <value>
@@ -66,7 +66,7 @@
         </test-method> <!-- login -->
       </class> <!-- com.christianlouboutin.testCases.Login -->
       <class name="com.christianlouboutin.testCases.AddCart">
-        <test-method status="PASS" signature="setup(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.christianlouboutin.testCases.AddCart@1f57539]" name="setup" is-config="true" duration-ms="18449" started-at="2020-07-18T14:57:53 IST" finished-at="2020-07-18T14:58:11 IST">
+        <test-method status="PASS" signature="setup(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.christianlouboutin.testCases.AddCart@536aaa8d]" name="setup" is-config="true" duration-ms="26719" started-at="2020-07-18T18:41:26 IST" finished-at="2020-07-18T18:41:53 IST">
           <params>
             <param index="0">
               <value>
@@ -75,18 +75,18 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[org.testng.TestRunner@31198ceb]]>
+                <![CDATA[org.testng.TestRunner@9257031]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="init()[pri:0, instance:com.christianlouboutin.testCases.AddCart@1f57539]" name="init" is-config="true" duration-ms="111" started-at="2020-07-18T14:58:12 IST" finished-at="2020-07-18T14:58:12 IST">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.christianlouboutin.testCases.AddCart@536aaa8d]" name="init" is-config="true" duration-ms="85" started-at="2020-07-18T18:41:53 IST" finished-at="2020-07-18T18:41:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="addToCart(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.AddCart@1f57539]" name="addToCart" duration-ms="8358" started-at="2020-07-18T14:58:15 IST" data-provider="ProductDataDetails" finished-at="2020-07-18T14:58:23 IST">
+        <test-method status="PASS" signature="addToCart(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.AddCart@536aaa8d]" name="addToCart" duration-ms="20512" started-at="2020-07-18T18:41:57 IST" data-provider="ProductDataDetails" finished-at="2020-07-18T18:42:17 IST">
           <params>
             <param index="0">
               <value>
@@ -110,14 +110,14 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[37]]>
+                <![CDATA[35]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method status="PASS" signature="addToCart(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.AddCart@1f57539]" name="addToCart" duration-ms="68042" started-at="2020-07-18T14:58:24 IST" data-provider="ProductDataDetails" finished-at="2020-07-18T14:59:32 IST">
+        <test-method status="PASS" signature="addToCart(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.christianlouboutin.testCases.AddCart@536aaa8d]" name="addToCart" duration-ms="42016" started-at="2020-07-18T18:42:18 IST" data-provider="ProductDataDetails" finished-at="2020-07-18T18:43:00 IST">
           <params>
             <param index="0">
               <value>
@@ -148,11 +148,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method status="PASS" signature="checkOut()[pri:0, instance:com.christianlouboutin.testCases.AddCart@1f57539]" name="checkOut" duration-ms="9112" started-at="2020-07-18T14:59:32 IST" finished-at="2020-07-18T14:59:42 IST">
+        <test-method status="PASS" signature="checkOut()[pri:0, instance:com.christianlouboutin.testCases.AddCart@536aaa8d]" name="checkOut" duration-ms="18930" started-at="2020-07-18T18:43:00 IST" finished-at="2020-07-18T18:43:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkOut -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.christianlouboutin.testCases.AddCart@1f57539]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-07-18T15:00:10 IST" finished-at="2020-07-18T15:00:10 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.christianlouboutin.testCases.AddCart@536aaa8d]" name="tearDown" is-config="true" duration-ms="1" started-at="2020-07-18T18:43:57 IST" finished-at="2020-07-18T18:43:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

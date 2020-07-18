@@ -7,7 +7,9 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -30,21 +32,19 @@ public class DeliveryAndPayment extends BaseClass {
 		robot = new Robot();
 	}
 
-//	@Test(dataProvider = "RegistrationData")
-//	public void deliveryAddress(String firstName, String LastName, String email, String addres, String city, String pin,
-//			String phone) {
-//
-//	}
+
 
 	@Test(dataProvider = "CardDetails")
 
 	public void payment(String cardnumber, String cardExpMonth, String cardExpYear, String cvv, String cardHolderName)
 			throws InterruptedException {
+		action.waitForElement(dlp.credit);
 		js.click(dlp.credit);
 		logger.info("Clicked credit card Radio button");
 		Thread.sleep(5000);
 		driver.switchTo().frame(0);
 
+		action.waitForElement(dlp.cardNumber);
 		dlp.cardNumber.sendKeys(cardnumber);
 		logger.info("Entered Card number " + cardnumber);
 //		robot.keyPress(KeyEvent.VK_TAB);
@@ -54,6 +54,7 @@ public class DeliveryAndPayment extends BaseClass {
 
 		// dlp.CardExpiryDate.sendKeys(cardExpDate);
 		logger.info("Entered Card Expiry Date " + cardExpMonth);
+		action.waitForElement(dlp.CardExpiryDate);
 		dlp.CardExpiryDate.sendKeys(cardExpMonth + cardExpYear);
 		driver.switchTo().defaultContent();
 		driver.switchTo().frame(2);
@@ -64,6 +65,7 @@ public class DeliveryAndPayment extends BaseClass {
 		// js.sendKeys(cardExpYear,
 		// driver.findElement(By.xpath("//input[@id='expiryYear']")));
 
+		action.waitForElement(dlp.CVVcode);
 		dlp.CVVcode.sendKeys(cvv);
 		logger.info("Entered CVV " + cvv);
 
@@ -71,14 +73,28 @@ public class DeliveryAndPayment extends BaseClass {
 		 * dlp.cardNumber.sendKeys(Keys.TAB); robot.keyPress(KeyEvent.VK_ENTER);
 		 */
 		driver.switchTo().defaultContent();
+		action.waitForElement(dlp.cardHolderName);
 		dlp.cardHolderName.sendKeys(cardHolderName);
 		logger.info("Entered card holder Name " + cardHolderName);
+		
+		action.waitForElement(dlp.checkBox1);
 		dlp.checkBox1.click();
 		logger.info("Clicked on checkBox One");
+		
+		action.waitForElement(dlp.checkBox2);
 		dlp.checkBox2.click();
 		logger.info("Clicked on checkBox two");
+		
+		action.waitForElement(dlp.placeOrder);
 		dlp.placeOrder.click();
 		logger.info("Clicked on place order");
+		
+		action.waitForElement(dlp.continueToShop);
+		
+		//wait.until(ExpectedConditions.visibilityOf(dlp.continueToShop));
+	
+	
+	
 	}
 
 	@DataProvider(name = "RegistrationData")

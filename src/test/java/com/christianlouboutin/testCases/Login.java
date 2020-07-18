@@ -30,27 +30,30 @@ public class Login extends BaseClass {
 
 	@Test(dataProvider = "LoginData")
 	public void login(String userMail, String password) throws InterruptedException {
-
+		action.waitForElement(rg.openLogin);
 		js.click(rg.openLogin);
 		logger.info("Clicked on Open Login");
+		
+		action.waitForElement(rg.loginEmail);
 		rg.loginEmail.sendKeys(userMail);
 		logger.info("Entered Email " + userMail);
+		
+		action.waitForElement(rg.loginPassword);
 		rg.loginPassword.sendKeys(password);
 		logger.info("Entered Password " + password);
+		
+		action.waitForElement(rg.verifyLogin);
 		rg.verifyLogin.click();
 		logger.info("Clicked on Verify Login");
 		Thread.sleep(5000);
 		js.scrollTilElement(dlp.Suivant);
-		wait.until(ExpectedConditions.visibilityOf(dlp.UPS_Express));
+		action.waitForElement(dlp.UPS_Express);
 		System.out.println(dlp.UPS_Express.isDisplayed());
-		// js.clickByXLocation(dlp.UPS_Standard);
-		// action.clickOnByOffSet(dlp.UPS_Standard);
-		// Thread.sleep(5000);
-		// Thread.sleep(10000);
-		// wait.until(ExpectedConditions.elementToBeClickable(dlp.UPS_Express));
-		// dlp.UPS_Express.click();
+		
 		js.click(dlp.UPS_Express);
 		logger.info("Clicked on UPS Express");
+		
+		action.waitForElement(dlp.Suivant);
 		js.click(dlp.Suivant);
 		// dlp.Suivant.click();
 		logger.info("Clicked on Follow(Suivant)");

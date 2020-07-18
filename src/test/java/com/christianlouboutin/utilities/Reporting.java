@@ -57,7 +57,7 @@ public class Reporting extends TestListenerAdapter {
 		try {
 
 			FileUtils.copyFile(des, new File(
-					System.getProperty("user.dir")+"/test-output/Screenshots/" + tr.getName() + name.getName() + ".png"));
+					System.getProperty("user.dir")+"/Screenshots/" + tr.getName() + name.getName() + ".png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -67,14 +67,14 @@ public class Reporting extends TestListenerAdapter {
 																							// information to the report
 																							// // with GREEN color
 																							// highlight
-		String screenshotPath = System.getProperty("user.dir")+"/test-output/Screenshots/" + tr.getName() + name.getName() + ".png";
+		String screenshotPath = System.getProperty("user.dir")+"/Screenshots/" + tr.getName() + name.getName() + ".png";
 		
 
 		File f = new File(screenshotPath);
 	
 		if (f.exists()) {
 			try {
-				logger.pass("Screenshot is below:" + logger.addScreenCaptureFromPath("./Screenshots/" + tr.getName() + name.getName() + ".png"));
+				logger.pass("Screenshot is below:" + logger.addScreenCaptureFromPath("../Screenshots/" + tr.getName() + name.getName() + ".png"));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
@@ -88,7 +88,7 @@ public class Reporting extends TestListenerAdapter {
 		try {
 
 			FileUtils.copyFile(des, new File(
-					System.getProperty("user.dir")+ "/test-output/Screenshots/" + tr.getName() + name.getName() + ".png"));
+					System.getProperty("user.dir")+ "/Screenshots/" + tr.getName() + name.getName() + ".png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -98,14 +98,14 @@ public class Reporting extends TestListenerAdapter {
 		logger.log(Status.FAIL, "Error Details :- \n" + tr.getThrowable().getMessage()); // to the report with GREEN
 		// color highlighted
 
-		String screenshotPath = "/test-output/Screenshots/" + tr.getName() + name.getName()
+		String screenshotPath = "/Screenshots/" + tr.getName() + name.getName()
 				+ ".png";
 
 		File f = new File(screenshotPath);
 
 		if (f.exists()) {
 			try {
-				logger.fail("Screenshot is below:" + logger.addScreenCaptureFromPath("./Screenshots/" + tr.getName() + name.getName() + ".png"));
+				logger.fail("Screenshot is below:" + logger.addScreenCaptureFromPath("../Screenshots/" + tr.getName() + name.getName() + ".png"));
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

@@ -970,26 +970,310 @@
 2020-07-18 14:24:21,842 - christianlouboutin -INFO - Clicked on checkBox One
 2020-07-18 14:24:21,954 - christianlouboutin -INFO - Clicked on checkBox two
 2020-07-18 14:24:22,443 - christianlouboutin -INFO - Clicked on place order
-2020-07-18 14:58:15,795 - christianlouboutin -INFO - Clicked Main menu Femme
-2020-07-18 14:58:18,798 - christianlouboutin -INFO - Clicked sub menu So Kate
-2020-07-18 14:58:23,012 - christianlouboutin -INFO - Selected product with ID 34061 And So Kate 120
-2020-07-18 14:58:24,597 - christianlouboutin -INFO - Clicked Main menu Femme
-2020-07-18 14:58:27,856 - christianlouboutin -INFO - Clicked sub menu So Kate
-2020-07-18 14:58:30,465 - christianlouboutin -INFO - Selected product with ID 26422 And So Kate 120
-2020-07-18 14:59:37,110 - christianlouboutin -INFO - Clicked on Checkout
-2020-07-18 14:59:42,100 - christianlouboutin -INFO - Clicked on Continue To Payment
-2020-07-18 14:59:47,938 - christianlouboutin -INFO - Clicked on Open Login
-2020-07-18 14:59:49,048 - christianlouboutin -INFO - Entered Email djegkos@gmail.com
-2020-07-18 14:59:49,470 - christianlouboutin -INFO - Entered Password Djeg1010!
-2020-07-18 14:59:49,711 - christianlouboutin -INFO - Clicked on Verify Login
-2020-07-18 14:59:59,207 - christianlouboutin -INFO - Clicked on UPS Express
-2020-07-18 14:59:59,289 - christianlouboutin -INFO - Clicked on Follow(Suivant)
-2020-07-18 15:00:02,790 - christianlouboutin -INFO - Clicked credit card Radio button
-2020-07-18 15:00:08,293 - christianlouboutin -INFO - Entered Card number 5136 3333 3333 3335
-2020-07-18 15:00:08,410 - christianlouboutin -INFO - Entered Card Expiry Date 03
-2020-07-18 15:00:08,680 - christianlouboutin -INFO - Entered Card Expiry Date 03
-2020-07-18 15:00:08,848 - christianlouboutin -INFO - Entered CVV 737
-2020-07-18 15:00:09,059 - christianlouboutin -INFO - Entered card holder Name Jerry
-2020-07-18 15:00:09,218 - christianlouboutin -INFO - Clicked on checkBox One
-2020-07-18 15:00:09,369 - christianlouboutin -INFO - Clicked on checkBox two
-2020-07-18 15:00:09,662 - christianlouboutin -INFO - Clicked on place order
+2020-07-18 15:10:07,342 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 15:10:11,360 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 15:10:16,875 - christianlouboutin -INFO - Selected product with ID 34061 And So Kate 120
+2020-07-18 15:10:18,843 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 15:10:22,496 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 15:10:27,754 - christianlouboutin -INFO - Selected product with ID 26422 And So Kate 120
+2020-07-18 15:16:30,988 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 15:16:35,218 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 15:16:40,819 - christianlouboutin -INFO - Selected product with ID 34061 And So Kate 120
+2020-07-18 15:16:41,056 - christianlouboutin -INFO - Selected size 35
+2020-07-18 15:16:41,197 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 15:16:42,978 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 15:16:47,346 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 15:16:50,647 - christianlouboutin -INFO - Selected product with ID 26422 And So Kate 120
+2020-07-18 15:16:52,375 - christianlouboutin -INFO - Selected size 35
+2020-07-18 15:16:52,980 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 15:18:01,629 - christianlouboutin -INFO - Clicked on Checkout
+2020-07-18 15:18:10,571 - christianlouboutin -INFO - Clicked on Continue To Payment
+2020-07-18 15:18:11,377 - christianlouboutin -INFO - Clicked on Open Login
+2020-07-18 15:18:11,703 - christianlouboutin -INFO - Entered Email djegkos@gmail.com
+2020-07-18 15:18:11,895 - christianlouboutin -INFO - Entered Password Djeg1010!
+2020-07-18 15:18:12,114 - christianlouboutin -INFO - Clicked on Verify Login
+2020-07-18 15:18:24,601 - christianlouboutin -INFO - Clicked on UPS Express
+2020-07-18 15:18:24,668 - christianlouboutin -INFO - Clicked on Follow(Suivant)
+2020-07-18 15:18:29,793 - christianlouboutin -INFO - Clicked credit card Radio button
+2020-07-18 15:18:35,209 - christianlouboutin -INFO - Entered Card number 5136 3333 3333 3335
+2020-07-18 15:18:35,251 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 15:18:35,688 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 15:18:35,795 - christianlouboutin -INFO - Entered CVV 737
+2020-07-18 15:18:36,116 - christianlouboutin -INFO - Entered card holder Name Jerry
+2020-07-18 15:18:36,229 - christianlouboutin -INFO - Clicked on checkBox One
+2020-07-18 15:18:36,345 - christianlouboutin -INFO - Clicked on checkBox two
+2020-07-18 15:18:37,133 - christianlouboutin -INFO - Clicked on place order
+2020-07-18 15:33:12,580 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 15:33:18,674 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 15:33:25,079 - christianlouboutin -INFO - Selected product with ID 34061 And So Kate 120
+2020-07-18 15:33:25,346 - christianlouboutin -INFO - Selected size 35
+2020-07-18 15:33:25,487 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 15:33:26,860 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 15:33:31,277 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 15:33:35,902 - christianlouboutin -INFO - Selected product with ID 26422 And So Kate 120
+2020-07-18 15:33:36,179 - christianlouboutin -INFO - Selected size 35
+2020-07-18 15:33:36,737 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 15:34:46,528 - christianlouboutin -INFO - Clicked on Checkout
+2020-07-18 15:34:46,754 - christianlouboutin -INFO - Clicked on Continue To Payment
+2020-07-18 15:40:44,216 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 15:40:48,191 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 15:40:51,948 - christianlouboutin -INFO - Selected product with ID 34061 And So Kate 120
+2020-07-18 15:40:52,145 - christianlouboutin -INFO - Selected size 35
+2020-07-18 15:40:52,258 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 15:40:54,280 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 15:40:57,735 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 15:41:02,191 - christianlouboutin -INFO - Selected product with ID 26422 And So Kate 120
+2020-07-18 15:41:02,395 - christianlouboutin -INFO - Selected size 35
+2020-07-18 15:41:03,166 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 15:42:11,879 - christianlouboutin -INFO - Clicked on Checkout
+2020-07-18 15:42:12,198 - christianlouboutin -INFO - Clicked on Continue To Payment
+2020-07-18 15:43:20,896 - christianlouboutin -INFO - Clicked on Open Login
+2020-07-18 15:43:22,176 - christianlouboutin -INFO - Entered Email djegkos@gmail.com
+2020-07-18 15:43:22,528 - christianlouboutin -INFO - Entered Password Djeg1010!
+2020-07-18 15:43:22,929 - christianlouboutin -INFO - Clicked on Verify Login
+2020-07-18 15:43:42,591 - christianlouboutin -INFO - Clicked on UPS Express
+2020-07-18 15:43:42,656 - christianlouboutin -INFO - Clicked on Follow(Suivant)
+2020-07-18 15:43:47,198 - christianlouboutin -INFO - Clicked credit card Radio button
+2020-07-18 15:43:52,599 - christianlouboutin -INFO - Entered Card number 5136 3333 3333 3335
+2020-07-18 15:43:52,644 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 15:43:53,046 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 15:43:53,156 - christianlouboutin -INFO - Entered CVV 737
+2020-07-18 15:43:53,491 - christianlouboutin -INFO - Entered card holder Name Jerry
+2020-07-18 15:43:53,599 - christianlouboutin -INFO - Clicked on checkBox One
+2020-07-18 15:43:53,710 - christianlouboutin -INFO - Clicked on checkBox two
+2020-07-18 15:43:54,434 - christianlouboutin -INFO - Clicked on place order
+2020-07-18 17:04:11,434 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 17:04:15,865 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 17:04:18,346 - christianlouboutin -INFO - Selected product with ID 34061 And So Kate 120
+2020-07-18 17:04:20,063 - christianlouboutin -INFO - Selected size 35
+2020-07-18 17:04:20,213 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 17:04:21,497 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 17:04:25,375 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 17:04:26,981 - christianlouboutin -INFO - Selected product with ID 26422 And So Kate 120
+2020-07-18 17:04:34,441 - christianlouboutin -INFO - Selected size 35
+2020-07-18 17:04:38,940 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 17:05:47,296 - christianlouboutin -INFO - Clicked on Checkout
+2020-07-18 17:05:47,574 - christianlouboutin -INFO - Clicked on Continue To Payment
+2020-07-18 17:10:30,381 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 17:10:34,919 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 17:10:40,249 - christianlouboutin -INFO - Selected product with ID 34061 And So Kate 120
+2020-07-18 17:10:40,541 - christianlouboutin -INFO - Selected size 35
+2020-07-18 17:10:40,682 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 17:10:41,970 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 17:10:45,689 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 17:10:50,800 - christianlouboutin -INFO - Selected product with ID 26422 And So Kate 120
+2020-07-18 17:10:51,106 - christianlouboutin -INFO - Selected size 35
+2020-07-18 17:10:51,596 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 17:12:00,941 - christianlouboutin -INFO - Clicked on Checkout
+2020-07-18 17:12:08,376 - christianlouboutin -INFO - Clicked on Continue To Payment
+2020-07-18 17:12:09,957 - christianlouboutin -INFO - Clicked on Open Login
+2020-07-18 17:12:10,329 - christianlouboutin -INFO - Entered Email djegkos@gmail.com
+2020-07-18 17:12:10,513 - christianlouboutin -INFO - Entered Password Djeg1010!
+2020-07-18 17:12:10,729 - christianlouboutin -INFO - Clicked on Verify Login
+2020-07-18 17:12:24,914 - christianlouboutin -INFO - Clicked on UPS Express
+2020-07-18 17:12:25,004 - christianlouboutin -INFO - Clicked on Follow(Suivant)
+2020-07-18 17:12:30,131 - christianlouboutin -INFO - Clicked credit card Radio button
+2020-07-18 17:12:35,509 - christianlouboutin -INFO - Entered Card number 5136 3333 3333 3335
+2020-07-18 17:12:35,557 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 17:12:35,966 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 17:12:36,080 - christianlouboutin -INFO - Entered CVV 737
+2020-07-18 17:12:36,420 - christianlouboutin -INFO - Entered card holder Name Jerry
+2020-07-18 17:12:36,527 - christianlouboutin -INFO - Clicked on checkBox One
+2020-07-18 17:12:36,639 - christianlouboutin -INFO - Clicked on checkBox two
+2020-07-18 17:12:38,226 - christianlouboutin -INFO - Clicked on place order
+2020-07-18 17:30:13,545 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 17:30:19,834 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 17:30:25,570 - christianlouboutin -INFO - Selected product with ID 34061 And So Kate 120
+2020-07-18 17:30:27,821 - christianlouboutin -INFO - Selected size 35
+2020-07-18 17:30:28,042 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 17:30:29,971 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 17:30:33,618 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 17:30:39,183 - christianlouboutin -INFO - Selected product with ID 26422 And So Kate 120
+2020-07-18 17:30:39,839 - christianlouboutin -INFO - Selected size 35
+2020-07-18 17:30:40,157 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 17:31:46,420 - christianlouboutin -INFO - Clicked on Checkout
+2020-07-18 17:31:53,126 - christianlouboutin -INFO - Clicked on Continue To Payment
+2020-07-18 17:31:57,908 - christianlouboutin -INFO - Clicked on Open Login
+2020-07-18 17:31:59,913 - christianlouboutin -INFO - Entered Email djegkos@gmail.com
+2020-07-18 17:32:00,199 - christianlouboutin -INFO - Entered Password Djeg1010!
+2020-07-18 17:32:00,458 - christianlouboutin -INFO - Clicked on Verify Login
+2020-07-18 17:32:12,940 - christianlouboutin -INFO - Clicked on UPS Express
+2020-07-18 17:32:13,059 - christianlouboutin -INFO - Clicked on Follow(Suivant)
+2020-07-18 17:32:17,292 - christianlouboutin -INFO - Clicked credit card Radio button
+2020-07-18 17:32:22,919 - christianlouboutin -INFO - Entered Card number 5136 3333 3333 3335
+2020-07-18 17:32:22,954 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 17:32:23,394 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 17:32:23,615 - christianlouboutin -INFO - Entered CVV 737
+2020-07-18 17:32:23,901 - christianlouboutin -INFO - Entered card holder Name Jerry
+2020-07-18 17:32:24,123 - christianlouboutin -INFO - Clicked on checkBox One
+2020-07-18 17:32:24,318 - christianlouboutin -INFO - Clicked on checkBox two
+2020-07-18 17:32:24,743 - christianlouboutin -INFO - Clicked on place order
+2020-07-18 17:34:04,700 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 17:34:08,395 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 17:34:11,345 - christianlouboutin -INFO - Selected product with ID 34061 And So Kate 120
+2020-07-18 17:34:13,897 - christianlouboutin -INFO - Selected size 35
+2020-07-18 17:34:14,160 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 17:34:15,759 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 17:34:19,515 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 17:34:22,873 - christianlouboutin -INFO - Selected product with ID 26422 And So Kate 120
+2020-07-18 17:34:25,383 - christianlouboutin -INFO - Selected size 35
+2020-07-18 17:34:25,937 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 17:35:35,728 - christianlouboutin -INFO - Clicked on Checkout
+2020-07-18 17:35:36,469 - christianlouboutin -INFO - Clicked on Continue To Payment
+2020-07-18 18:03:13,703 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 18:03:20,584 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 18:03:26,893 - christianlouboutin -INFO - Selected product with ID 34061 And So Kate 120
+2020-07-18 18:03:30,893 - christianlouboutin -INFO - Selected size 35
+2020-07-18 18:03:31,113 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 18:03:35,942 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 18:03:43,668 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 18:03:51,700 - christianlouboutin -INFO - Selected product with ID 26422 And So Kate 120
+2020-07-18 18:03:55,038 - christianlouboutin -INFO - Selected size 35
+2020-07-18 18:03:55,514 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 18:05:04,249 - christianlouboutin -INFO - Clicked on Checkout
+2020-07-18 18:05:04,957 - christianlouboutin -INFO - Clicked on Continue To Payment
+2020-07-18 18:07:55,947 - christianlouboutin -INFO - Clicked on Open Login
+2020-07-18 18:08:01,270 - christianlouboutin -INFO - Entered Email djegkos@gmail.com
+2020-07-18 18:08:01,643 - christianlouboutin -INFO - Entered Password Djeg1010!
+2020-07-18 18:08:02,095 - christianlouboutin -INFO - Clicked on Verify Login
+2020-07-18 18:08:28,983 - christianlouboutin -INFO - Clicked on UPS Express
+2020-07-18 18:08:29,330 - christianlouboutin -INFO - Clicked on Follow(Suivant)
+2020-07-18 18:08:37,513 - christianlouboutin -INFO - Clicked credit card Radio button
+2020-07-18 18:09:24,650 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 18:09:31,229 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 18:09:37,343 - christianlouboutin -INFO - Selected product with ID 34061 And So Kate 120
+2020-07-18 18:09:41,317 - christianlouboutin -INFO - Selected size 35
+2020-07-18 18:09:41,475 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 18:09:45,975 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 18:09:53,371 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 18:10:01,497 - christianlouboutin -INFO - Selected product with ID 26422 And So Kate 120
+2020-07-18 18:10:04,751 - christianlouboutin -INFO - Selected size 35
+2020-07-18 18:10:05,173 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 18:11:13,867 - christianlouboutin -INFO - Clicked on Checkout
+2020-07-18 18:11:24,178 - christianlouboutin -INFO - Clicked on Continue To Payment
+2020-07-18 18:11:26,039 - christianlouboutin -INFO - Clicked on Open Login
+2020-07-18 18:11:26,574 - christianlouboutin -INFO - Entered Email djegkos@gmail.com
+2020-07-18 18:11:27,011 - christianlouboutin -INFO - Entered Password Djeg1010!
+2020-07-18 18:11:27,394 - christianlouboutin -INFO - Clicked on Verify Login
+2020-07-18 18:11:41,771 - christianlouboutin -INFO - Clicked on UPS Express
+2020-07-18 18:11:41,940 - christianlouboutin -INFO - Clicked on Follow(Suivant)
+2020-07-18 18:11:45,856 - christianlouboutin -INFO - Clicked credit card Radio button
+2020-07-18 18:11:51,414 - christianlouboutin -INFO - Entered Card number 5136 3333 3333 3335
+2020-07-18 18:11:51,457 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 18:11:51,891 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 18:11:52,160 - christianlouboutin -INFO - Entered CVV 737
+2020-07-18 18:11:52,498 - christianlouboutin -INFO - Entered card holder Name Jerry
+2020-07-18 18:11:52,790 - christianlouboutin -INFO - Clicked on checkBox One
+2020-07-18 18:11:53,051 - christianlouboutin -INFO - Clicked on checkBox two
+2020-07-18 18:11:53,606 - christianlouboutin -INFO - Clicked on place order
+2020-07-18 18:16:26,917 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 18:16:33,408 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 18:16:39,297 - christianlouboutin -INFO - Selected product with ID 34061 And So Kate 120
+2020-07-18 18:16:43,185 - christianlouboutin -INFO - Selected size 35
+2020-07-18 18:16:43,357 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 18:16:47,658 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 18:16:54,699 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 18:17:02,655 - christianlouboutin -INFO - Selected product with ID 26422 And So Kate 120
+2020-07-18 18:17:05,958 - christianlouboutin -INFO - Selected size 35
+2020-07-18 18:17:06,422 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 18:18:13,955 - christianlouboutin -INFO - Clicked on Checkout
+2020-07-18 18:18:23,673 - christianlouboutin -INFO - Clicked on Continue To Payment
+2020-07-18 18:18:24,717 - christianlouboutin -INFO - Clicked on Open Login
+2020-07-18 18:18:25,054 - christianlouboutin -INFO - Entered Email djegkos@gmail.com
+2020-07-18 18:18:25,349 - christianlouboutin -INFO - Entered Password Djeg1010!
+2020-07-18 18:18:25,679 - christianlouboutin -INFO - Clicked on Verify Login
+2020-07-18 18:18:37,477 - christianlouboutin -INFO - Clicked on UPS Express
+2020-07-18 18:18:37,698 - christianlouboutin -INFO - Clicked on Follow(Suivant)
+2020-07-18 18:18:43,025 - christianlouboutin -INFO - Clicked credit card Radio button
+2020-07-18 18:18:48,566 - christianlouboutin -INFO - Entered Card number 5136 3333 3333 3335
+2020-07-18 18:18:48,596 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 18:18:48,992 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 18:18:49,264 - christianlouboutin -INFO - Entered CVV 737
+2020-07-18 18:18:49,656 - christianlouboutin -INFO - Entered card holder Name Jerry
+2020-07-18 18:18:50,118 - christianlouboutin -INFO - Clicked on checkBox One
+2020-07-18 18:18:50,461 - christianlouboutin -INFO - Clicked on checkBox two
+2020-07-18 18:18:51,192 - christianlouboutin -INFO - Clicked on place order
+2020-07-18 18:29:29,545 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 18:29:36,089 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 18:29:42,305 - christianlouboutin -INFO - Selected product with ID 34061 And So Kate 120
+2020-07-18 18:29:46,227 - christianlouboutin -INFO - Selected size 35
+2020-07-18 18:29:46,509 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 18:29:51,408 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 18:29:58,832 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 18:30:04,903 - christianlouboutin -INFO - Selected product with ID 26422 And So Kate 120
+2020-07-18 18:30:09,177 - christianlouboutin -INFO - Selected size 35
+2020-07-18 18:30:09,611 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 18:31:17,750 - christianlouboutin -INFO - Clicked on Checkout
+2020-07-18 18:31:22,892 - christianlouboutin -INFO - Scrolling till refresh sign
+2020-07-18 18:31:32,369 - christianlouboutin -INFO - Clicked on Continue To Payment
+2020-07-18 18:31:33,558 - christianlouboutin -INFO - Clicked on Open Login
+2020-07-18 18:31:34,045 - christianlouboutin -INFO - Entered Email djegkos@gmail.com
+2020-07-18 18:31:34,314 - christianlouboutin -INFO - Entered Password Djeg1010!
+2020-07-18 18:31:34,643 - christianlouboutin -INFO - Clicked on Verify Login
+2020-07-18 18:31:47,193 - christianlouboutin -INFO - Clicked on UPS Express
+2020-07-18 18:31:47,362 - christianlouboutin -INFO - Clicked on Follow(Suivant)
+2020-07-18 18:31:51,258 - christianlouboutin -INFO - Clicked credit card Radio button
+2020-07-18 18:31:56,784 - christianlouboutin -INFO - Entered Card number 5136 3333 3333 3335
+2020-07-18 18:31:56,819 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 18:31:57,229 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 18:31:57,483 - christianlouboutin -INFO - Entered CVV 737
+2020-07-18 18:31:57,813 - christianlouboutin -INFO - Entered card holder Name Jerry
+2020-07-18 18:31:58,106 - christianlouboutin -INFO - Clicked on checkBox One
+2020-07-18 18:31:58,349 - christianlouboutin -INFO - Clicked on checkBox two
+2020-07-18 18:31:58,918 - christianlouboutin -INFO - Clicked on place order
+2020-07-18 18:37:17,492 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 18:37:24,670 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 18:37:30,824 - christianlouboutin -INFO - Selected product with ID 34061 And So Kate 120
+2020-07-18 18:37:34,774 - christianlouboutin -INFO - Selected size 35
+2020-07-18 18:37:34,952 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 18:37:39,526 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 18:37:47,066 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 18:37:55,041 - christianlouboutin -INFO - Selected product with ID 26422 And So Kate 120
+2020-07-18 18:37:58,345 - christianlouboutin -INFO - Selected size 35
+2020-07-18 18:37:58,865 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 18:39:07,131 - christianlouboutin -INFO - Clicked on Checkout
+2020-07-18 18:39:12,292 - christianlouboutin -INFO - Scrolling till refresh sign
+2020-07-18 18:39:22,887 - christianlouboutin -INFO - Clicked on Continue To Payment
+2020-07-18 18:39:25,810 - christianlouboutin -INFO - Clicked on Open Login
+2020-07-18 18:39:26,379 - christianlouboutin -INFO - Entered Email djegkos@gmail.com
+2020-07-18 18:39:26,733 - christianlouboutin -INFO - Entered Password Djeg1010!
+2020-07-18 18:39:27,091 - christianlouboutin -INFO - Clicked on Verify Login
+2020-07-18 18:39:38,313 - christianlouboutin -INFO - Clicked on UPS Express
+2020-07-18 18:39:38,488 - christianlouboutin -INFO - Clicked on Follow(Suivant)
+2020-07-18 18:39:42,315 - christianlouboutin -INFO - Clicked credit card Radio button
+2020-07-18 18:39:47,924 - christianlouboutin -INFO - Entered Card number 5136 3333 3333 3335
+2020-07-18 18:39:47,968 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 18:39:48,398 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 18:39:48,682 - christianlouboutin -INFO - Entered CVV 737
+2020-07-18 18:39:49,070 - christianlouboutin -INFO - Entered card holder Name Jerry
+2020-07-18 18:39:49,401 - christianlouboutin -INFO - Clicked on checkBox One
+2020-07-18 18:39:49,667 - christianlouboutin -INFO - Clicked on checkBox two
+2020-07-18 18:39:50,250 - christianlouboutin -INFO - Clicked on place order
+2020-07-18 18:42:00,424 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 18:42:06,940 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 18:42:13,066 - christianlouboutin -INFO - Selected product with ID 34061 And So Kate 120
+2020-07-18 18:42:16,995 - christianlouboutin -INFO - Selected size 35
+2020-07-18 18:42:17,181 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 18:42:21,590 - christianlouboutin -INFO - Clicked Main menu Femme
+2020-07-18 18:42:28,641 - christianlouboutin -INFO - Clicked sub menu So Kate
+2020-07-18 18:42:36,751 - christianlouboutin -INFO - Selected product with ID 26422 And So Kate 120
+2020-07-18 18:42:40,006 - christianlouboutin -INFO - Selected size 35
+2020-07-18 18:42:40,406 - christianlouboutin -INFO - Added to cart So Kate 120 with size 35
+2020-07-18 18:43:05,608 - christianlouboutin -INFO - Clicked on Checkout
+2020-07-18 18:43:10,739 - christianlouboutin -INFO - Scrolling till refresh sign
+2020-07-18 18:43:19,874 - christianlouboutin -INFO - Clicked on Continue To Payment
+2020-07-18 18:43:21,952 - christianlouboutin -INFO - Clicked on Open Login
+2020-07-18 18:43:22,409 - christianlouboutin -INFO - Entered Email djegkos@gmail.com
+2020-07-18 18:43:22,703 - christianlouboutin -INFO - Entered Password Djeg1010!
+2020-07-18 18:43:23,065 - christianlouboutin -INFO - Clicked on Verify Login
+2020-07-18 18:43:34,583 - christianlouboutin -INFO - Clicked on UPS Express
+2020-07-18 18:43:34,757 - christianlouboutin -INFO - Clicked on Follow(Suivant)
+2020-07-18 18:43:38,561 - christianlouboutin -INFO - Clicked credit card Radio button
+2020-07-18 18:43:44,095 - christianlouboutin -INFO - Entered Card number 5136 3333 3333 3335
+2020-07-18 18:43:44,140 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 18:43:44,565 - christianlouboutin -INFO - Entered Card Expiry Date 03
+2020-07-18 18:43:44,863 - christianlouboutin -INFO - Entered CVV 737
+2020-07-18 18:43:45,283 - christianlouboutin -INFO - Entered card holder Name Jerry
+2020-07-18 18:43:45,594 - christianlouboutin -INFO - Clicked on checkBox One
+2020-07-18 18:43:45,866 - christianlouboutin -INFO - Clicked on checkBox two
+2020-07-18 18:43:46,435 - christianlouboutin -INFO - Clicked on place order

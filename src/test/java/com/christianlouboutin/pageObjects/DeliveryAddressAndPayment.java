@@ -192,5 +192,16 @@ public class DeliveryAddressAndPayment extends BaseClass {
 	public WebElement placeOrder;
 	
 	
+	/**
+	 *continue To Shop {@link WebElement}
+	 */
+	@FindBy(xpath = "//a[@class='action primary continue']//span[contains(text(),'Continuer les achats')]")
+
+	public WebElement continueToShop;
+	
+	
+	
+	
+	
 	
 }

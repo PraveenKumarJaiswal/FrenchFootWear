@@ -3,6 +3,7 @@ package com.christianlouboutin.testCases;
 import java.io.IOException;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -24,30 +25,28 @@ public class AddCart extends BaseClass {
 	}
 
 	@Test(dataProvider = "ProductDataDetails", priority = 0)
-	public void addToCart(String mainmenu, String subMenu, String pid, String description, String size) {
+	public void addToCart(String mainmenu, String subMenu, String pid, String description, String size) throws Throwable {
 
 		menu.selectMenu(mainmenu);
 		logger.info("Clicked Main menu " + mainmenu);
 		menu.selectSubMenu(subMenu);
 		logger.info("Clicked sub menu " + subMenu);
-		menu.selectProduct(pid,description);
-		logger.info("Selected product with ID " + pid +" And "+description);
-	
-		
-		
+		menu.selectProduct(pid, description);
+		logger.info("Selected product with ID " + pid + " And " + description);
+
 		js.scrollTilElement(menu.retour);
 		menu.selectSize(size);
+		logger.info("Selected size " + size);
 		js.click(menu.addToCart);
+		logger.info("Added to cart " + description + " with size " + size);
 		try {
 			menu.acceptCookies.click();
 			menu.closeAsk.click();
 
 		} catch (Exception e) {
-			
+
 		}
-		
-		
-		
+
 		// menu.home.click();
 
 	}
@@ -56,18 +55,16 @@ public class AddCart extends BaseClass {
 
 	public void checkOut() throws InterruptedException {
 
-		// menu.cart.click();
-		// menu.closeAsk.click();
-		// Thread.sleep(2000);
-		// menu.checkout.click();
+	
 		js.click(menu.checkout);
 		logger.info("Clicked on Checkout");
-		// menu.acceptCookies.click();
-		// js.scrollTilElement(menu.payment);
-		//js.click(menu.payment);
+		Thread.sleep(5000);
+		action.waitForElement(menu.refreshSignForScroll);
+		js.scrollTilElement(menu.refreshSignForScroll);
+		logger.info("Scrolling till refresh sign");
+		action.waitForElement(menu.payment);
 		menu.payment.click();
 		logger.info("Clicked on Continue To Payment");
-		
 
 	}
 

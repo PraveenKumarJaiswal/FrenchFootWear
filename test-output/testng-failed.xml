@@ -7,14 +7,6 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.christianlouboutin.testCases.DeliveryAndPayment">
-        <methods>
-          <include name="payment" invocation-numbers="0"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="init"/>
-        </methods>
-      </class> <!-- com.christianlouboutin.testCases.DeliveryAndPayment -->
       <class name="com.christianlouboutin.testCases.Login">
         <methods>
           <include name="login" invocation-numbers="0"/>
@@ -23,6 +15,14 @@
           <include name="setup"/>
         </methods>
       </class> <!-- com.christianlouboutin.testCases.Login -->
+      <class name="com.christianlouboutin.testCases.DeliveryAndPayment">
+        <methods>
+          <include name="payment" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.christianlouboutin.testCases.DeliveryAndPayment -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

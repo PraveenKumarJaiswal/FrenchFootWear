@@ -12,17 +12,9 @@ public class Menu extends BaseClass {
 		PageFactory.initElements(driver, this);
 	}
 
-	/**
-	 * Home button {@link WebElement}
-	 */
 	@FindBy(xpath = "//a[@class='header-logo-minimal']//img")
 
 	public WebElement home;
-
-	/**
-	 * Add To Cart {@link WebElement}
-	 * 
-	 */
 
 	@FindBy(xpath = "//button[@id='product-addtocart-button']")
 
@@ -73,10 +65,8 @@ public class Menu extends BaseClass {
 
 	public WebElement payment;
 
-	/**
-	 * continue {@link WebElement}
-	 * 
-	 */
+	@FindBy(xpath = "//span[contains(text(),'Mettre à jour le panier')]")
+	public WebElement refreshSignForScroll;
 
 	@FindBy(xpath = "//button[@class='btn btn-main-action button']//span[text()='Continuer']")
 
@@ -91,56 +81,33 @@ public class Menu extends BaseClass {
 
 	public WebElement closeAsk;
 
-	// div[text()='Pas maintenant']
-
-	/**
-	 * Select Product.
-	 * 
-	 * @param pid
-	 * @throws InterruptedException
-	 */
-	public void selectProduct(String pid, String description) {
-
+	
+	public void selectProduct(String pid, String description) throws Throwable {
+		Thread.sleep(3000);
 		js.click(driver.findElement(
 				By.xpath("//li[@data-product-id='" + pid + "']//a[contains(text(),'" + description + "')]")));
 
 	}
 
-	/**
-	 * Select Main Menu.
-	 * 
-	 * @param mainMenu
-	 * @throws InterruptedException
-	 */
-	public void selectMenu(String mainMenu) {
-
+	
+	public void selectMenu(String mainMenu) throws Throwable {
+		Thread.sleep(3000);
 		action.moveToElement(driver.findElement(By.xpath(
 				"//span[@class='ui-menu-icon ui-icon ui-icon-carat-1-e']//following-sibling::span[contains(text(),'"
 						+ mainMenu + "')]")));
 
 	}
 
-	/**
-	 * Select Sub Menu.
-	 * 
-	 * @param SubMenu {@link String}
-	 * @throws InterruptedException
-	 */
 
-	public void selectSubMenu(String SubMenu) {
-
+	public void selectSubMenu(String SubMenu) throws Throwable {
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//span[text()='" + SubMenu + "']")).click();
 
 	}
 
-	/**
-	 * Select Size
-	 * 
-	 * @param size
-	 * @throws InterruptedException
-	 */
-	public void selectSize(String size) {
 
+	public void selectSize(String size) throws Throwable {
+		Thread.sleep(3000);
 		js.click(driver.findElement(By.xpath("//li[@class='in-stock' and contains(text(),'" + size + "')]")));
 		// driver.findElement(By.xpath("//li[@class='attribute-option']//a[contains(text(),'"
 		// + size + "')]")).click();;
